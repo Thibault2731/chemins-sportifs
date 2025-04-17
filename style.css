@@ -1,62 +1,95 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7f4;
+  color: #2e2e2e;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
-  color: #333;
   line-height: 1.6;
 }
 
 header {
-  background: #222;
-  color: #fff;
+  background-color: #305c3d;
+  color: white;
   text-align: center;
   padding: 2rem 1rem;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
-section {
+main {
   padding: 2rem 1rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 
 h2 {
-  border-bottom: 2px solid #ccc;
+  color: #305c3d;
+  border-bottom: 2px solid #c2d5c2;
   padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: #4a774e;
+  margin-top: 1.5rem;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
+  list-style-type: none;
+  padding-left: 1rem;
 }
 
-ul li {
-  padding: 0.5rem 0;
-}
-
-.sms-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+ul li::before {
+  content: "✓ ";
+  color: #5c8d5c;
   font-weight: bold;
 }
 
-.sms-button:hover {
-  background: #0056b3;
+section {
+  margin-bottom: 2.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn.call {
+  background-color: #4a774e;
+  color: white;
+}
+
+.btn.call:hover {
+  background-color: #3c6241;
+}
+
+.btn.sms {
+  background-color: #a8c2a5;
+  color: #2e2e2e;
+}
+
+.btn.sms:hover {
+  background-color: #94b095;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #eee;
-  color: #555;
+  background: #e0eae0;
+  color: #444;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
 }
